@@ -30,21 +30,23 @@ export default function IndexPage() {
 						Get Started
 					</a>
 				</div>
-				<motion.div
-					animate={isMobile && { rotate: ['-1deg', '1deg', '-1deg'] }}
-					transition={{ duration: 8, loop: Infinity }}
-					className="w-full max-w-2xl mx-auto bg-white md:rounded-2xl mt-28 shadow-2xl"
-				>
+				<motion.div className="w-full max-w-2xl mx-auto bg-white md:rounded-2xl mt-28 shadow-2xl">
 					<div className="">
 						<div className="flex flex-col md:flex-row gap-12 p-12">
-							<div
+							<motion.div
+								animate={
+									!isMobile && {
+										rotate: ['-1deg', '1deg', '-1deg'],
+									}
+								}
+								transition={{ duration: 8, loop: Infinity }}
 								className="relative -mt-28 w-60 h-60 bg-red-400 rounded-2xl bg-cover border-8 border-white outline outline-offset-0 outline-teal-200 outline-8 mx-auto"
 								style={{
 									backgroundImage: 'url("/img/portrait.jpg")',
 								}}
 							>
 								<div className="-mt-3 -mr-3 animate-pulse w-8 h-8 absolute right-0 rounded-full bg-green-500 shadow border-4 border-white" />
-							</div>
+							</motion.div>
 							<div className="space-y-2">
 								<p className="text-3xl">Yudimar DeJesus</p>
 								<p className="text-md opacity-75 font-medium">
