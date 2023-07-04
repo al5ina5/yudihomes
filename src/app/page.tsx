@@ -5,6 +5,7 @@ import { ContactBanners } from './components/ContactBanners';
 import classNames from 'classnames';
 import SideScroll from '../components';
 import { motion } from 'framer-motion';
+import isMobile from 'is-mobile';
 
 export default function IndexPage() {
 	return (
@@ -30,7 +31,7 @@ export default function IndexPage() {
 					</a>
 				</div>
 				<motion.div
-					animate={{ rotate: ['-1deg', '1deg', '-1deg'] }}
+					animate={isMobile && { rotate: ['-1deg', '1deg', '-1deg'] }}
 					transition={{ duration: 8, loop: Infinity }}
 					className="w-full max-w-2xl mx-auto bg-white md:rounded-2xl mt-28 shadow-2xl"
 				>
