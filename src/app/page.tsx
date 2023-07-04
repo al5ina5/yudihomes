@@ -13,7 +13,7 @@ export default function IndexPage() {
 			<div className="max-w-7xl mx-auto flex-col lg:flex-row flex items-center justify-center md:gap-12 md:mt-24 md:mb-48">
 				<div className="relative flex-1 p-12 space-y-8">
 					{/* <i className="fas fa-home text-3xl" /> */}
-					<p className="relative text-7xl font-extralight font-sans">
+					<p className="relative text-5xl md:text-7xl font-extralight font-sans">
 						Find your perfect Florida home with{' '}
 						<span className="inline-block font-serif">
 							Yudi Homes
